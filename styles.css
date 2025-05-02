@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(to right, #4d27b6 0%, #000000 25%, #000000 75%, #4d27b6 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    text-decoration: none;
+}
+
+.flag:hover {
+    transform: scale(1.1);
+    opacity: 0.85;
+}
+
+.flag img {
+    width: 120px;
+    height: auto;
+}
+
+.flag span {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #8087d3;
+    text-decoration: none;
+}
+
+.page-container {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.links a {
+    display: block;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.links a:hover {
+    background-color: #4d27b6;
+}
+
+.footer {
+    margin-top: 40px;
+}
+
+.footer img {
+    width: 40px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.footer img:hover {
+    opacity: 1;
+}
+
+.language-switcher {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.language-switcher img {
+    width: 24px;
+    height: auto;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.language-switcher img:hover {
+    opacity: 1;
+}
+
+@media (max-width: 600px) {
+    .flag img {
+        width: 80px;
+    }
+
+    .flag span {
+        font-size: 1rem;
+    }
+
+    .container {
+        gap: 30px;
+    }
+}
