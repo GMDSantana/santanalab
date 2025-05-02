@@ -6,13 +6,19 @@
 
 body {
     min-height: 100vh;
-    background: linear-gradient(to right, #4d27b6 0%, #000000 20%, #000000 80%, #4d27b6 100%);
+    background-color: #000000;
+    background-image: url('./images/background-texture.webp'), linear-gradient(to right, #4d27b6 0%, #000000 20%, #000000 80%, #4d27b6 100%);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
 }
+
 
 .container {
     text-align: center;
