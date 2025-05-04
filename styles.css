@@ -19,7 +19,6 @@ body {
     color: white;
 }
 
-
 .container {
     text-align: center;
     display: flex;
@@ -68,7 +67,25 @@ body {
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    margin: 10px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons img {
+    width: 40px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.social-icons img:hover {
+    opacity: 1;
 }
 
 .links {
@@ -78,7 +95,9 @@ body {
 }
 
 .links a {
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     padding: 15px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 8px;
@@ -91,18 +110,27 @@ body {
     background-color: #4d27b6;
 }
 
-.footer {
-    margin-top: 40px;
-}
-
-.footer img {
-    width: 40px;
-    opacity: 0.7;
+.links a img {
+    width: 24px;
+    height: 24px;
+    opacity: 0.8;
     transition: opacity 0.3s ease;
 }
 
-.footer img:hover {
+.links a:hover img {
     opacity: 1;
+}
+
+.links a span {
+    flex: 1;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: white;
+    margin: 20px 0;
 }
 
 .language-switcher {
@@ -136,3 +164,4 @@ body {
         gap: 30px;
     }
 }
+
